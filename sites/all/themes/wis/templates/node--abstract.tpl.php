@@ -79,8 +79,8 @@
  *
  * @ingroup themeable
  */
+dsm($content);
 ?>
-1234
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
   <?php print $user_picture; ?>
@@ -102,6 +102,14 @@
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
+      hide($content['field_presenter_first_name']);
+      hide($content['field_presenter_last_name']);
+
+      $first_name = $content['field_presenter_first_name']['#object']->field_presenter_first_name['und'][0]['value'];
+      $last_name = $content['field_presenter_last_name']['#object']->field_presenter_last_name['und'][0]['value'];
+
+      print $first_name . ' ' . $last_name;
+
       print render($content);
     ?>
   </div>
