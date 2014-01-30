@@ -1,0 +1,526 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+/****************
+------ General
+******/
+
+html, body {height: 100%;} /* for sticky footer */
+
+body {
+  font: 20px/1.2 Garamond, serif;
+  color:#595959;
+}
+
+/* colors
+*/
+.orange {
+  color:#ffa152;
+}
+
+.green {
+  color:#8abe35;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family:'PT Sans', sans-serif;
+}
+
+h1 {
+  color:#8abe35;
+  text-transform:uppercase;
+  font-size:38px;
+  margin:10px 0 0 0;
+}
+
+h3 {
+  margin-bottom:5px;
+  text-transform:uppercase;
+  font-size:20px;
+}
+
+/****************
+------ header Styling
+******/
+
+#section-header {
+  background:url(../images/hdr_slice.jpg) repeat-x left top;
+}
+
+#zone-branding-wrapper {
+  background:url(../images/hdr.jpg) no-repeat center top;
+  height:180px;
+  padding-top:30px;
+}
+
+/* date for the conference by the logo */
+#zone-branding #region-branding .block {
+  position:absolute;
+  left:225px;
+  top:55px;
+  color:white;
+}
+
+
+/* Menu
+*/
+
+#region-menu .navigation {
+  margin-top:20px;
+}
+
+#region-menu .navigation #main-menu li {
+  margin-right:0.1em;
+  padding:0 0.2em;
+}
+
+#region-menu .navigation #main-menu li a {
+  font-family: 'PT Sans', sans-serif;
+  font-size:25px;
+  color:#ffffff;
+  text-decoration:none;
+  letter-spacing:1px;
+  padding:10px;
+}
+
+#region-menu .navigation #main-menu li.active-trail a {
+  background:url(../images/dropdown.png) repeat top left;
+  border-radius:4px;
+}
+
+#region-menu .navigation #main-menu li a:hover,
+#region-menu .navigation #main-menu li a:focus,
+#region-menu .navigation #main-menu li a:active {
+  background:url(../images/bg-dropdown-dark.png) repeat top left;
+  border-radius:4px 4px 0px 0px;
+}
+
+/* Supefish Menu Styles
+*/
+
+#region-menu .sf-menu {
+  margin-top:20px;
+}
+
+  #region-menu .sf-menu li {
+     margin-right:0;
+     padding:0 0.2em;
+  }
+  
+    #region-menu .sf-menu li a {
+      font-family: 'PT Sans', sans-serif;
+      font-size:25px;
+      color:#ffffff;
+      text-decoration:none;
+      letter-spacing:1px;
+      padding:10px;
+      border-radius:4px 4px 4px 4px;
+    }
+    
+      #region-menu .sf-menu li a:hover,
+      #region-menu .sf-menu li a:focus,
+      #region-menu .sf-menu li a:active {
+        background:url(../images/dropdown.png) repeat top left;
+      }
+      
+      #region-menu .sf-menu li.active-trail a,
+      #region-menu .sf-menu li ul {
+        background:url(../images/bg-dropdown-dark.png) repeat top left;
+        border-radius:0;
+      }
+      
+        #region-menu .sf-menu li.active-trail li,
+        #region-menu .sf-menu li.active-trail li a {
+          background-image:none;
+        }
+
+/* Menu Mini panel styles
+*/
+
+.qtip-wis {
+  background:transparent url(../images/bg-dropdown-dark.png) repeat;
+}
+
+.qtip .menu-minipanels .menu {
+  
+}
+
+  .qtip .menu-minipanels .menu li {
+    list-style:none;
+    list-style-image:none;
+    margin: 0 0 10px 0.5em;
+    padding:0;
+  }
+  
+.qtip .menu-minipanels .panel-col-first .inside {
+  border-right:1px solid #474747;
+}
+
+    .qtip .menu-minipanels .menu li a {
+      font-family: 'PT Sans', sans-serif;
+      font-size:20px;
+      color:#ffffff;
+      text-decoration:none;
+      letter-spacing:1px;
+      padding-bottom:20px;
+      background:url(../images/dropdown-separator.png) repeat-x left bottom;
+      width:100%;
+      display:block;
+      text-transform:uppercase;
+    }
+    
+    .qtip .menu-minipanels .menu li a:hover,
+    .qtip .menu-minipanels .menu li a:focus,
+    .qtip .menu-minipanels .menu li a:active {
+      color:#c7c7c7;
+    }
+
+.qtip .menu-minipanels .panel-col-last {
+  font-family:'PT Sans', sans-serif;
+  
+}
+
+/****************
+------ Content Styling
+******/
+
+#zone-content {
+  margin-bottom:20px;
+}
+
+.homepage-program,
+.homepage-participate,
+.homepage-speakers {
+  font:22px/1.2 Garamond, 'garamond', serif;
+}
+
+.homepage-program a,
+.homepage-participate a,
+.homepage-speakers a {
+  text-decoration:none;
+  color:#595959;
+}
+
+.homepage-program {
+ background:url(../images/icon_notebook.png) no-repeat left top;
+ padding:0 10px 0 120px;
+}
+
+.homepage-participate {
+  background:url(../images/icon_plus.png) no-repeat left top;
+  padding:0 10px 0 120px;
+}
+
+.homepage-speakers {
+  background:url(../images/icon_mic.png) no-repeat left top;
+  padding:0 10px 0 120px;
+}
+
+/* Features Scroller
+*/
+
+#block-views-sponsors-featured-sponsors {
+  width:600px;
+  float:left;
+  position:relative;
+  height:115px;
+}
+
+  #block-views-sponsors-featured-sponsors .sponsor-listing {
+    position:absolute;
+    width:9999em;
+  }
+
+  #block-views-sponsors-featured-sponsors .sponsor-listing li {
+    float:left;
+    margin:0 20px 0 0; 
+  }
+
+.save-the-date {
+  background:url(../images/btn_background.png) no-repeat left top;
+  width:205px;
+  padding:15px 0 0 95px;
+  float:right;
+  color:#ffffff;
+  font-size:20px;
+  line-height: 24px;
+  height:86px;
+  font-family:'PT Sans', sans-serif;
+}
+
+/* Postscript
+*/
+
+#zone-postscript-wrapper {
+  border-top:1px solid #cccccc;
+  background:#faf8f3;
+}
+
+#zone-postscript {
+  background:url(../images/backgrond_wave.jpg) no-repeat left top;
+}
+
+  #zone-postscript .region {
+    padding:30px 0 0 0;
+  }
+
+    #zone-postscript .region .block {
+      margin:0 0 30px 0;
+    }
+
+#zone-postscript #region-postscript-first {
+  border-right:1px solid #cccccc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;   
+  box-sizing: border-box;
+  width:590px;
+  margin-right:20px;
+  padding-right:30px;
+}
+
+#zone-postscript #region-postscript-second {
+  margin-left:20px;
+}
+
+#region-postscript-first .block {
+  margin:0px 0 25px;
+}
+
+#stay-connected {
+  list-style:none;
+  list-style-image:none;  
+  margin-bottom:0px;
+}
+
+#stay-connected li {
+  display:inline;
+  margin:0 10px 0 0;
+  float:left;
+}
+
+#stay-connected li a {
+  width:63px;
+  height:64px;
+  display:block;
+}
+
+#stay-connected li a.google_plus {
+  background:url(../images/g_plus.png) no-repeat center center;
+}
+  #stay-connected li a.google_plus:hover,
+  #stay-connected li a.google_plus:focus,
+  #stay-connected li a.google_plus:active {
+    background:url(../images/g_plus_hover.png) no-repeat center center;
+  }
+
+#stay-connected li a.facebook {
+  background:url(../images/facebook.png) no-repeat center center;
+}
+  #stay-connected li a.facebook:hover,
+  #stay-connected li a.facebook:focus,
+  #stay-connected li a.facebook:active {
+    background:url(../images/facebook_hover.png) no-repeat center center;
+  }
+
+#stay-connected li a.twitter {
+  background:url(../images/twitter.png) no-repeat center center;
+}
+  #stay-connected li a.twitter:hover,
+  #stay-connected li a.twitter:focus,
+  #stay-connected li a.twitter:active {
+    background:url(../images/twitter_hover.png) no-repeat center center;
+  }
+
+
+#stay-connected li a.rss {
+  background:url(../images/rss.png) no-repeat center center;
+}
+  #stay-connected li a.rss:hover,
+  #stay-connected li a.rss:focus,
+  #stay-connected li a.rss:active {
+    background:url(../images/rss_hover.png) no-repeat center center;
+  }
+
+#stay-connected li a.linkedin {
+  background:url(../images/linkedin.png) no-repeat center center;
+}
+  #stay-connected li a.linkedin:hover,
+  #stay-connected li a.linkedin:focus,
+  #stay-connected li a.linked:active {
+    background:url(../images/linkedin-hover.png) no-repeat center center;
+  }
+
+#block-twitter-block-default .block-title {
+  background:#8cb547 url(../images/blow-horn.jpg) no-repeat right top;
+  color:#ffffff;
+  text-transform:uppercase;
+  padding:0 10px;
+  line-height:46px;
+}
+  
+#block-twitter-block-default #twitter_block_results li {
+  background:url(../images/bg-white-grid.jpg) repeat left top;
+  border:1px solid #ccc;
+  display:table;
+  margin-top:10px;
+  position:relative;
+}
+
+  #block-twitter-block-default #twitter_block_results li .twitter_block {
+    padding:10px;
+  }
+
+  #block-twitter-block-default #twitter_block_results li .profile_image {
+    padding:0;
+  }
+
+  #block-twitter-block-default #twitter_block_results li .twitter_block_user_name {
+    color:#18323f;
+    font-family:'PT Sans', sans-serif;
+    font-weight:bold;
+    font-size:14px;
+    line-height:16px;
+    text-decoration:none;
+    margin:0 0 5px 55px;
+  }
+
+  #block-twitter-block-default #twitter_block_results li .twitter_block_user img {
+    margin:0;
+    position:absolute;
+    left:10px;
+    top:10px;
+  }
+
+  #block-twitter-block-default #twitter_block_results li .tweet .tweet {
+    margin-left:55px;
+    font-size:14px;
+    line-height:16px;
+  }
+
+/* Keep up with conference block
+*/
+
+#block-views-homepage-feed-block-block .block-title {
+  background: #8CB547;
+  color: white;
+  text-transform: uppercase;
+  padding: 0 10px;
+  line-height: 46px;  
+}
+
+#block-views-homepage-feed-block-block .item-list ul {
+  background: url(../images/bg-white-grid.jpg) repeat left top;
+  border: 1px solid #CCC;
+  display: table;
+  position: relative;
+}
+  
+  #block-views-homepage-feed-block-block .item-list ul li {
+    margin: 0 10px 0 10px;
+    padding: 10px 0 0;
+    border-bottom: 1px solid #E9E9E9;
+    font-size:14px;
+    line-height:16px;
+  }
+  
+  #block-views-homepage-feed-block-block .item-list ul li.views-row-last {
+    border:none;
+  }
+
+    #block-views-homepage-feed-block-block .item-list ul li .views-field-title, 
+    #block-views-homepage-feed-block-block .item-list ul li .views-field-title a {
+      color: #18323F;
+      font-family: 'PT Sans', sans-serif;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      text-decoration: none;
+    }
+
+    #block-views-homepage-feed-block-block .item-list ul li .views-field-created {
+      color:#b7b7b7;
+      font-family:'PT Sans', sans-serif;
+      float:right;
+    }
+    
+    #block-views-homepage-feed-block-block .item-list ul li p {
+      margin-bottom:10px;
+    }
+
+/****************
+------ Footer Styling
+******/
+
+#section-footer {
+  background:#98bc5a;
+  padding-top:20px;
+  font-size:16px;
+}
+
+/****************
+------ Homepage Styling
+******/
+
+.front #page-title {
+  display:none;
+  visibility:hidden;
+}
+
+
+div.view-id-wis_sponsors li.jcarousel-item {
+  width: 350px;
+  text-align: center;
+}
+
+
+/*** horizontal style for user login block ***/
+/*
+#user-login-form div {
+    margin: 0 5px 0 0;
+    float: left;
+}
+#user-login-form label,  #user-login-form input {
+    float: left;
+    margin-right: 10px;
+}
+#user-login-form .form-required  {
+    display: none;
+}
+#user-login-form .item-list ul li {
+    float: left;
+    margin: 0 15px 0.25em 0;
+    margin-right: 15px;
+    padding: 0;
+}
+#block-user-login {
+    margin-top: 2px;
+}
+#block-user-login h2 {
+    display: none;
+}
+*/
+
+#block-user-login,
+#block-logintoboggan-logintoboggan-logged-in {
+  width: 680px;
+  float:right;
+  /* font-size: 90%; */
+   text-align: right;
+}
+
+#block-user-login a,
+#block-logintoboggan-logintoboggan-logged-in a {
+  color: #111;
+}
+
+#block-block-5 {
+   float: right;
+   text-align: right;
+   width: 680px;
+}
+
+div.view-display-id-page_1 table.views-view-grid td {
+  width: 33%;
+}
+
+
