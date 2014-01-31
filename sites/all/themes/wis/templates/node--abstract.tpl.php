@@ -107,9 +107,9 @@ dsm($content);
 
       $first_name = $content['field_presenter_first_name']['#object']->field_presenter_first_name['und'][0]['value'];
       $last_name = $content['field_presenter_last_name']['#object']->field_presenter_last_name['und'][0]['value'];
-
-      print $first_name . ' ' . $last_name;
-
+    ?>
+    <h3><?php echo $first_name . ' ' . $last_name; ?></h3>
+    <?
       print render($content);
     ?>
   </div>
